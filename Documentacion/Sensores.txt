@@ -1,0 +1,16 @@
+#Sensor RFID
+RFID-RC522
+
+#Sensor de proximidad
+HC-SR04
+
+#Sensor de latidos por minuto (Oximetro)
+MAX30102
+
+#Sensor emitor de sonido
+#-falta comprar
+
+#LED
+LED verde
+LED amarillo
+LED Rojo

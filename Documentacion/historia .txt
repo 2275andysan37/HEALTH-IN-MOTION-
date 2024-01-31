@@ -1,0 +1,3 @@
+historia 
+
+Este proyecto se desarorollo para evitar complicaciones a la salud de los trabajadores que pasan largas horas en la misma posición ya sea que laboran desde casa, en oficina o fabricas. Esto beneficia a la activación mental y física de cada trabajador, además, de que promueve la creatividad e innovación, en el caso de empresas mejora las relaciones de laborales. Estas actividades se realizaran tanto individualmente como en equipos, los datos que arroja cada tiempo de esparcimiento son monitoriados por una aplicación que muestra el progreso de cada individuo.

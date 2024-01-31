@@ -14,3 +14,11 @@ MAX30102
 LED verde
 LED amarillo
 LED Rojo
+
+
+##-----                 Que se realizara con la informacion recabada                                      -----##
+#                                                                                                               #
+# Se puede agregar a una base de datos para recopilar la informacion de que dias son los que se cumple          #
+# con la enmienda de justo a esa hora realizar el ejercicio, si su ritmo cardiaco ha cambiado, si realmente     #
+# sirve para ayudar la salud de los usuarios, sin meterse en un regimen alimenticio, sino solo estimulando el   #
+# metabolismo con ejercicio y activacion fisica                                                                 #

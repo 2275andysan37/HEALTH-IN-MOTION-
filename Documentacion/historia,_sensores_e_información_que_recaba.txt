@@ -1,0 +1,32 @@
+historia 
+
+la idea de este proyecto suirgio por dos aspectos pero principalmente pensando en la salud de los usuarios, tanto para personas que desean ser mas activos en su dia a dia que por sus habitos o rutina actuales que no le permiten realizar actividad o movimiento fisico, como tambien para evitar complicaciones a la salud de los trabajadores que pasan largas horas en la misma posición ya sea que laboran desde casa, en oficina o fabricas. Esto beneficia a la activación mental y física de cada trabajador, además, de que promueve la creatividad e innovación, en el caso de empresas mejora las relaciones de laborales. Estas actividades se realizaran tanto individualmente como en equipos, los datos que arroja cada tiempo de esparcimiento son monitoriados por una aplicación que muestra su progreso. 
+
+Sensores
+
+#Sensor RFID
+RFID-RC522
+
+#Sensor de proximidad
+HC-SR04
+
+#Sensor de latidos por minuto (Oximetro)
+MAX30102
+
+#Sensor emitor de sonido
+#-falta comprar
+
+#LED
+LED verde
+LED amarillo
+LED Rojo
+
+
+##-----                 Que se realizara con la informacion recabada                                      -----##
+#                                                                                                               #
+# Se puede agregar a una base de datos para recopilar la informacion de que dias son los que se cumple          #
+# con la enmienda de justo a esa hora realizar el ejercicio, si su ritmo cardiaco ha cambiado, si realmente     #
+# sirve para ayudar la salud de los usuarios, sin meterse en un regimen alimenticio, sino solo estimulando el   #
+# metabolismo con ejercicio y activacion fisica                  
+
+                                       

@@ -15,7 +15,6 @@ amarillo.off()
 #Medir la distancia
 while True:
     distance = sensor.distance * 100
-    print ("Distancia: ", distance)
     #Si la distancia es menor a 7 prender el foco verde
     if distance < 10:
         amarillo.off()
@@ -30,4 +29,4 @@ while True:
         verde.off()
         
     #Medir la distancia cada medio segundo
-    time.sleep(0.5)
+    time.sleep(2)

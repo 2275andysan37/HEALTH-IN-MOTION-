@@ -23,27 +23,26 @@ amarillo.off()
 
 def check_in():
     #Medir la distancia
-    try:
-        while True:
-            distance = sensor.distance * 100
-            #Si la distancia es menor a 7 prender el foco verde
-            if distance < 10:
-                amarillo.off()
-                verde.on()
-                #Tomar la hora en la que acerco la mano e imprimirlo
-                checkin = datetime.now()
-                print("El sensor recibio el check-in de la mano... a las:", checkin)
-                GPIO.output(buzzer,GPIO.LOW)
-                verde.off()
-                break
+    bucle = True
+    while bucle:
+        distance = sensor.distance * 100
+        #Si la distancia es menor a 10 prender el foco verde
+        if distance < 10:
+            amarillo.off()
+            verde.on()
+            #Tomar la hora en la que acerco la mano e imprimirlo
+            checkin = datetime.now()
+            print("El sensor recibio el check-in de la mano... a las:", checkin)
+            GPIO.output(buzzer,GPIO.LOW)
+            verde.off()
+            bucle = False
+            break
                         
-            #Si la distancia es mayor a 10, encender el foco amarillo
-            elif distance > 10:
-                amarillo.on()
-                verde.off()
-                GPIO.output(buzzer,GPIO.HIGH)
+        #Si la distancia es mayor a 10, encender el foco amarillo
+        elif distance > 10:
+            amarillo.on()
+            verde.off()
+            GPIO.output(buzzer,GPIO.HIGH)
                 
-            #Medir la distancia cada medio segundo
-            time.sleep(1)
-    except KeyboardInterrupt:
-        print("Deteniendo...")
+        #Medir la distancia cada segundo
+        time.sleep(1)

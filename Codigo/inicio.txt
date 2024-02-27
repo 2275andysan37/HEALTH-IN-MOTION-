@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health in motion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Health in Motion</h1>
+        <center><p>Inicia sesión para monitorear tu progreso !!!</p></center>
+    </div>
+    <br></br>
+    <br></br>
+    <h1>Iniciar Sesión</h1>
+    <center><form action="login.php" method="post">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <center><button class="button" >Iniciar sesión</button></center>
+    </form>
+    <br></br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Emergente</title>
+    <style>
+        /* Estilos para el botón que abrirá la ventana emergente */
+        .popup-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Estilos para la ventana emergente */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <center><button class="popup-button" onclick="mostrarPopup()">Registrarse</button></center>
+
+    <div class="popup" id="miPopup">
+        <h2>    Registrate   </h2>
+        <p></p>
+        <div class="container">
+            <p>Registro de Usuario</p>
+            <form action="procesar_registro.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+            </form>
+        </div>
+        <button onclick="cerrarPopup()">Aceptar</button>
+    </div>
+
+    <script>
+        function mostrarPopup() {
+            document.getElementById("miPopup").style.display = "block";
+        }
+
+        function cerrarPopup() {
+            document.getElementById("miPopup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    </form>
+</body>
+</html>

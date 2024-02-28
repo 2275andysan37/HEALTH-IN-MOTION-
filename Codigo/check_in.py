@@ -3,6 +3,7 @@ from gpiozero import LED, DistanceSensor
 from datetime import datetime
 import RPi.GPIO as GPIO
 import time
+import bd
 
 #Sensores base con 2 LED y el sensor de proximidad
 sensor = DistanceSensor(echo = 21, trigger = 20)
@@ -20,6 +21,7 @@ GPIO.setup(buzzer,GPIO.OUT)
 #Inicializando los LED's apagados
 verde.off()
 amarillo.off()
+GPIO.output(buzzer,GPIO.LOW)
 
 def check_in():
     #Medir la distancia
@@ -31,7 +33,9 @@ def check_in():
             amarillo.off()
             verde.on()
             #Tomar la hora en la que acerco la mano e imprimirlo
-            checkin = datetime.now()
+            p = datetime.now()
+            checkin = p.strftime('%Y-%m-%d %H:%M:%S')
+            bd.grabar_datos(checkin)
             print("El sensor recibio el check-in de la mano... a las:", checkin)
             GPIO.output(buzzer,GPIO.LOW)
             verde.off()
